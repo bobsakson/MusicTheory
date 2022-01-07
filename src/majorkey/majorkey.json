@@ -1,0 +1,65 @@
+{
+    "majorKeys": [
+        {
+            "majorKey": "C",
+            "notes": ["C", "D", "E", "F", "G", "A", "B", "C"]
+        },
+        {
+            "majorKey": "D",
+            "notes": ["D", "E", "F#", "G", "A", "B", "C#", "D"]
+        },
+        {
+            "majorKey": "E",
+            "notes": ["E", "F#", "G#", "A", "B", "C#", "D#", "E"]
+        },
+        {
+            "majorKey": "F#",
+            "notes": ["F#", "G#", "A#", "B", "C#", "D#", "E#", "F#"]
+        },
+        {
+            "majorKey": "G",
+            "notes": ["G", "A", "B", "C", "D", "E", "F#", "G"]
+        },
+        {
+            "majorKey": "A",
+            "notes": ["A", "B", "C#", "D", "E", "F#", "G#", "A"]
+        },
+        {
+            "majorKey": "B",
+            "notes": ["B", "C#", "D#", "E", "F#", "G#", "A#", "B"]
+        },
+        {
+            "majorKey": "C#",
+            "notes": ["C#", "D#", "E#", "F#", "G#", "A#", "B#", "C#"]
+        },
+
+        {
+            "majorKey": "Cb",
+            "notes": ["Cb", "Db", "Eb", "Fb", "Gb", "Ab", "Bb", "Cb"]
+        },
+        {
+            "majorKey": "Db",
+            "notes": ["Db", "Eb", "F", "Gb", "Ab", "Bb", "C", "Db"]
+        },
+        {
+            "majorKey": "Eb",
+            "notes": ["Eb", "F", "G", "Ab", "Bb", "C", "D", "Eb"]
+        },
+        {
+            "majorKey": "F",
+            "notes": ["F", "G", "A", "Bb", "C", "D", "E", "F"]
+        },
+        {
+            "majorKey": "Gb",
+            "notes": ["Gb", "Ab", "Bb", "Cb", "Db", "Eb", "F", "Gb"]
+        },
+        {
+            "majorKey": "Ab",
+            "notes": ["Ab", "Bb", "C", "Db", "Eb", "F", "G", "Ab"]
+        },
+        {
+            "majorKey": "Bb",
+            "notes": ["Bb", "C", "D", "Eb", "F", "G", "A", "Bb"]
+        }
+    ]
+}
