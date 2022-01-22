@@ -16,6 +16,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Home as HomeIcon, MusicNote, Quiz as QuizIcon } from '@mui/icons-material';
 import MuiAppBar from '@mui/material/AppBar';
+import Collapse from '@mui/material/Collapse';
 
 import {
     BrowserRouter as Router,
@@ -25,7 +26,8 @@ import {
   } from "react-router-dom";
 import Home from "../home/home";
 import MajorKey from "../majorkey/majorkey";
-import Quiz from "../quiz/quiz"
+import NoteQuiz from "../quiz/noteQuiz"
+import TriadQuiz from "../quiz/triadQuiz"
 
 const drawerWidth = 240;
 
@@ -136,29 +138,30 @@ export default function ApplicationDrawer() {
                 <ListItemIcon>
                     <MusicNote/>
                 </ListItemIcon>
-                <ListItemText>Major Keys</ListItemText>
+                <ListItemText>Keys</ListItemText>
             </ListItem>
-            <ListItem button component={Link} to="/quiz">
+            <ListItem>
                 <ListItemIcon>
                     <QuizIcon/>
                 </ListItemIcon>
-                <ListItemText>Quiz</ListItemText>
+                <ListItemText>Quizzes</ListItemText>
             </ListItem>
+            <Collapse in={open} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItem sx={{ pl: 12 }} button component={Link} to="/quiz/noteQuiz">Notes</ListItem>
+                <ListItem sx={{ pl: 12 }} button component={Link} to="/quiz/triadQuiz">Triads</ListItem>
+              </List>
+            </Collapse>
         </List>
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        
-       
-
- 
-         <Routes>
-           <Route path="/majorkey" element={<MajorKey/>}/>
-           <Route path="/quiz" element={<Quiz/>}/>
-           <Route path="/" element={<Home/>}/>
-         </Routes>
- 
-    
+        <Routes>
+          <Route path="/majorkey" element={<MajorKey/>}/>
+          <Route path="/quiz/noteQuiz" element={<NoteQuiz/>}/>
+          <Route path="/quiz/triadQuiz" element={<TriadQuiz/>}/>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
       </Main>
     </Box>
     </Router>
