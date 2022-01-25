@@ -14,7 +14,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { Home as HomeIcon, MusicNote, Quiz as QuizIcon } from '@mui/icons-material';
+import { Home as HomeIcon, MusicNote, Quiz as QuizIcon, Article } from '@mui/icons-material';
 import MuiAppBar from '@mui/material/AppBar';
 import Collapse from '@mui/material/Collapse';
 
@@ -25,9 +25,10 @@ import {
     Link
   } from "react-router-dom";
 import Home from "../home/home";
-import MajorKey from "../majorkey/majorkey";
-import NoteQuiz from "../quiz/noteQuiz"
-import TriadQuiz from "../quiz/triadQuiz"
+import Keys from "../keys/keys";
+import NoteQuiz from "../quiz/noteQuiz";
+import TriadQuiz from "../quiz/triadQuiz";
+import Triads from "../theory/triads";
 
 const drawerWidth = 240;
 
@@ -134,7 +135,18 @@ export default function ApplicationDrawer() {
                 </ListItemIcon>
                 <ListItemText>Home</ListItemText>
             </ListItem>
-            <ListItem button component={Link} to="/majorkey">
+            <ListItem>
+                <ListItemIcon>
+                    <Article/>
+                </ListItemIcon>
+                <ListItemText>Theory</ListItemText>
+            </ListItem>
+            <Collapse in={open} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItem sx={{ pl: 12 }} button component={Link} to="/theory/triads">Triads</ListItem>
+              </List>
+            </Collapse>
+            <ListItem button component={Link} to="/key">
                 <ListItemIcon>
                     <MusicNote/>
                 </ListItemIcon>
@@ -157,9 +169,10 @@ export default function ApplicationDrawer() {
       <Main open={open}>
         <DrawerHeader />
         <Routes>
-          <Route path="/majorkey" element={<MajorKey/>}/>
+          <Route path="/key" element={<Keys/>}/>
           <Route path="/quiz/noteQuiz" element={<NoteQuiz/>}/>
           <Route path="/quiz/triadQuiz" element={<TriadQuiz/>}/>
+          <Route path="/theory/triads" element={<Triads/>}/>
           <Route path="/" element={<Home/>}/>
         </Routes>
       </Main>

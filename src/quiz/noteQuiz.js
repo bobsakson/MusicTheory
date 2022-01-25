@@ -2,7 +2,7 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import { useState, useEffect, useRef } from "react";
 import Button from '@mui/material/Button';
-import { majorKeys } from "../majorkey/majorkey.json";
+import { keys } from "../keys/keys.json";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -16,8 +16,8 @@ import { makeStyles } from "@material-ui/styles";
 
 function NoteQuiz() {
   const notes = [];
-  majorKeys.map((mk) => {
-    notes.push(mk.majorKey);
+  keys.map((mk) => {
+    notes.push(mk.key);
   });
 
   const baseNotes = ["A", "B", "C", "D", "E", "F", "G"];
@@ -67,7 +67,7 @@ function NoteQuiz() {
     const endNotes = baseNotes.slice(0, noteIndex);
     const combinedNotes = startNotes.concat(endNotes);
 
-    setAnswerKey(majorKeys.find(x => x.majorKey === selectedKey).notes.filter(note => note !== selectedKey));
+    setAnswerKey(keys.find(x => x.key === selectedKey).notes.filter(note => note !== selectedKey));
     console.log(answerKey);
     setAnswers(combinedNotes);
     setNotesInAKey(combinedNotes);

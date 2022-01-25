@@ -1,11 +1,11 @@
-import { majorKeys } from "./majorkey.json";
+import { keys } from "./keys.json";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
-function MajorKey() {
+function Keys() {
   return (
     <Table>
       <TableHead>
@@ -22,7 +22,7 @@ function MajorKey() {
       </TableHead>
       <TableBody>
         {
-          majorKeys.map(key => {
+          keys.map(key => {
             return <TableRow>
               {
                 key.notes.map(note => {
@@ -37,4 +37,4 @@ function MajorKey() {
   );
 }
 
-export default MajorKey;
+export default Keys;

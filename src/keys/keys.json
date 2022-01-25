@@ -1,77 +1,77 @@
 {
-  "majorKeys": [
+  "keys": [
     {
-        "majorKey": "C",
+        "key": "C",
         "notes": ["C", "D", "E", "F", "G", "A", "B", "C"],
         "triads": ["CEG", "DFA", "EGB", "FAC", "GBD", "ACE", "BDF", "CEG"]
     },
     {
-        "majorKey": "D",
+        "key": "D",
         "notes": ["D", "E", "F#", "G", "A", "B", "C#", "D"],
         "triads": ["DF#A", "EGB", "F#AC#", "GBD", "AC#E", "BDF#", "C#EG", "DF#A"]
     },
     {
-        "majorKey": "E",
+        "key": "E",
         "notes": ["E", "F#", "G#", "A", "B", "C#", "D#", "E"],
         "triads": ["EG#B", "F#AC#", "G#BD#", "AC#E", "BD#F#", "C#EG#", "D#F#A", "EG#B"]
     },
     {
-        "majorKey": "F#",
+        "key": "F#",
         "notes": ["F#", "G#", "A#", "B", "C#", "D#", "E#", "F#"],
         "triads": ["F#A#C#", "G#BD#", "A#C#E#", "BD#F#", "C#E#G#", "D#F#A#", "E#G#B", "F#A#C#"]
     },
     {
-        "majorKey": "G",
+        "key": "G",
         "notes": ["G", "A", "B", "C", "D", "E", "F#", "G"],
         "triads": ["GBD", "ACE", "BDF#", "CEG", "DF#A", "EGB", "F#AC", "GBD"]
     },
     {
-        "majorKey": "A",
+        "key": "A",
         "notes": ["A", "B", "C#", "D", "E", "F#", "G#", "A"],
         "triads": ["AC#E", "BDF#", "C#EG#", "DF#A", "EG#B", "F#AC#", "G#BD", "AC#E"]
     },
     {
-        "majorKey": "B",
+        "key": "B",
         "notes": ["B", "C#", "D#", "E", "F#", "G#", "A#", "B"],
         "triads": ["BD#F#", "C#EG#", "D#F#A#", "EG#B", "F#A#C#", "G#BD#", "A#C#E", "BD#F#"]
     },
     {
-        "majorKey": "C#",
+        "key": "C#",
         "notes": ["C#", "D#", "E#", "F#", "G#", "A#", "B#", "C#"],
         "triads": ["C#E#G#", "D#F#A#", "E#G#B#", "F#A#C#", "G#B#D#", "A#C#E#", "B#D#F#", "C#E#G#"]
     },
     {
-        "majorKey": "Cb",
+        "key": "Cb",
         "notes": ["Cb", "Db", "Eb", "Fb", "Gb", "Ab", "Bb", "Cb"],
         "triads": ["CbEbGb", "DbFbAb", "EbGbBb", "FbAbCb", "GbBbDb", "AbCbEb", "BbDbFb", "CbEbGb"]
     },
     {
-        "majorKey": "Db",
+        "key": "Db",
         "notes": ["Db", "Eb", "F", "Gb", "Ab", "Bb", "C", "Db"],
         "triads": ["DbFAb", "EbGbBb", "FAbC", "GbBbDb", "AbCEb", "BbDbF", "CEbGb", "DbFAb"]
     },
     {
-        "majorKey": "Eb",
+        "key": "Eb",
         "notes": ["Eb", "F", "G", "Ab", "Bb", "C", "D", "Eb"],
         "triads": ["EbGBb", "FAbC", "GBbD", "AbCEb", "BbDF", "CEbG", "DFAb", "EbGBb"]
     },
     {
-        "majorKey": "F",
+        "key": "F",
         "notes": ["F", "G", "A", "Bb", "C", "D", "E", "F"],
         "triads": ["FAC", "GBbD", "ACE", "BbDF", "CEG", "DFA", "EGBb", "FAC"]
     },
     {
-        "majorKey": "Gb",
+        "key": "Gb",
         "notes": ["Gb", "Ab", "Bb", "Cb", "Db", "Eb", "F", "Gb"],
         "triads": ["GbBbDb", "AbCbEb", "BbDbF", "CbEbGb", "DbFAb", "EbGbBb", "FAbCb", "GbBbDb"]
     },
     {
-        "majorKey": "Ab",
+        "key": "Ab",
         "notes": ["Ab", "Bb", "C", "Db", "Eb", "F", "G", "Ab"],
         "triads": ["AbCEb", "BbDbF", "CEbG", "DbFAb", "EbGBb", "FAbC", "GBbDb", "AbCEb"]
     },
     {
-        "majorKey": "Bb",
+        "key": "Bb",
         "notes": ["Bb", "C", "D", "Eb", "F", "G", "A", "Bb"],
         "triads": ["BbDF", "CEbG", "DFA", "EbGBb", "FAC", "GBbD", "ACEb", "BbDF"]
     }

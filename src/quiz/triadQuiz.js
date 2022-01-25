@@ -2,7 +2,7 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import { useState, useEffect, useRef } from "react";
 import Button from '@mui/material/Button';
-import { majorKeys } from "../majorkey/majorkey.json";
+import { keys } from "../keys/keys.json";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -13,8 +13,8 @@ import TextField from '@mui/material/TextField';
 
 function TriadQuiz() {
   const notes = [];
-  majorKeys.map((mk) => {
-    notes.push(mk.majorKey);
+  keys.map((mk) => {
+    notes.push(mk.key);
   });
 
   const [answerKey, setAnswerKey] = useState([]);
@@ -83,7 +83,7 @@ function TriadQuiz() {
   };
 
   const populateKeyNotes = (selectedKey) => {
-    setAnswerKey(majorKeys.find(x => x.majorKey === selectedKey).triads);
+    setAnswerKey(keys.find(x => x.key === selectedKey).triads);
   };
 
   useEffect(() => {
